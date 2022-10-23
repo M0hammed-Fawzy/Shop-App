@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-const Color mainColor = Colors.teal;
+const Color mainColor = Color(0xFF311B92);
 const Color darkGreyClr = Color(0xFF121212);
 const Color pinkClr = Color(0xFFff4667);
 const Color kCOlor1 = Color(0xff685959);
@@ -18,7 +18,7 @@ const Color white = Colors.white;
 class ThemesApp {
   static final light = ThemeData(
     primaryColor: mainColor,
-    backgroundColor: Color.fromARGB(255, 248, 244, 244),
+    backgroundColor: Colors.white,
     brightness: Brightness.light,
   );
 

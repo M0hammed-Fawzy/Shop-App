@@ -10,7 +10,7 @@
 //  },
 //  "id": "136742241592917"
 // }
-/*
+
 class FaceBookModel {
   final String? name;
   final String? email;
@@ -42,4 +42,3 @@ class FaceBookPhotoModel {
         height: json['height'],
       );
 }
-*/

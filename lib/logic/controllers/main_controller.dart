@@ -1,5 +1,3 @@
-
-import 'package:car/view/screens/search_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
@@ -14,18 +12,14 @@ class MainController extends GetxController {
   var tabs = [
     HomeScreen(),
     CategoryScreen(),
-    searchScreen(),
     FavoritesScreen(),
     SettingsScreen(),
-    
   ].obs;
 
   var title = [
-    "ECommerce",
+    "خـدمـات سـيـارات",
     "Categories",
-    "Search",
-    'Favorite',
-    "Setting",
-    
+    'المفضلة',
+    "الاعدادات",
   ].obs;
 }

@@ -30,7 +30,7 @@ class SignUpScreen extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(
           backgroundColor:
-              Get.isDarkMode ? darkGreyClr : mainColor,
+              Get.isDarkMode ? darkGreyClr : Color.fromARGB(235, 21, 194, 102),
           elevation: 0,
           centerTitle: true,
           title: Text(

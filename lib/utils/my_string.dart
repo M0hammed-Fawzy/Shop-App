@@ -3,7 +3,7 @@ String validationEmail =
 
 String validationName = r'^[a-z A-Z]+$';
 
-String baseUrl2 = 'https://ecommerce-9cc9b-default-rtdb.firebaseio.com/';
+String baseUrl2 = 'https://public-power-d6af3-default-rtdb.firebaseio.com/';
 
 String arabic = 'Arabic 🇸🇦';
 String english = 'English 🇬🇧';

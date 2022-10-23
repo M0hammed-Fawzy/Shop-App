@@ -83,13 +83,13 @@ class WelcomeScreen extends StatelessWidget {
                     ),
                   ),*/
                   const SizedBox(
-                    height: 400,
+                    height: 300,
                   ),
                   ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                        primary: mainColor,
+                        primary: white,
                         shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20),
+                          borderRadius: BorderRadius.circular(10),
                         ),
                         padding: const EdgeInsets.symmetric(
                           horizontal: 40,
@@ -102,21 +102,21 @@ class WelcomeScreen extends StatelessWidget {
                       fontSize: 15,
                       fontWeight: FontWeight.bold,
                       text: 'تسجيل الدخول',
-                      color: Colors.white,
+                      color: Colors.black,
                       underLine: TextDecoration.none,
                     ),
                   ),
                   const SizedBox(
-                    height: 15,
+                    height: 20,
                   ),
                   ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                        primary: Color.fromARGB(255, 201, 183, 29),
+                        primary: white,
                         shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20),
+                          borderRadius: BorderRadius.circular(10),
                         ),
                         padding: const EdgeInsets.symmetric(
-                          horizontal: 15,
+                          horizontal: 18,
                           vertical: 12,
                         )),
                     onPressed: () {
@@ -126,7 +126,7 @@ class WelcomeScreen extends StatelessWidget {
                       fontSize: 15,
                       fontWeight: FontWeight.bold,
                       text: 'تسجيل مستخدم جديد',
-                      color: white,
+                      color: Colors.black,
                       underLine: TextDecoration.none,
                     ),
                   ),

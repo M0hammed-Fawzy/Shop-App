@@ -17,15 +17,15 @@ class HomeScreen extends StatelessWidget {
         body: Column(
           children: [
             Container(
-            /*  width: double.infinity,
-              height: 100,*/ //edit
-           /*   decoration: BoxDecoration(
+              width: double.infinity,
+              height: 100, //edit
+              decoration: BoxDecoration(
                 color: Get.isDarkMode ? darkGreyClr : mainColor,
                 borderRadius: const BorderRadius.only(
                   bottomLeft: Radius.circular(20),
                   bottomRight: Radius.circular(20),
                 ),
-              ),*/
+              ),
               child: Padding(
                 padding: const EdgeInsets.only(left: 15, right: 15),
                 child: Column(
@@ -49,15 +49,15 @@ class HomeScreen extends StatelessWidget {
                       underLine: TextDecoration.none,
                     ),*/
                     const SizedBox(height: 10),
-                  /*  SearchFormText(),*/
+                    SearchFormText(),
                   ],
                 ),
               ),
             ),
             const SizedBox(
-              height: 0,
+              height: 10,
             ),
-         /*   Padding(
+            Padding(
               padding: const EdgeInsets.only(left: 20),
               child: Align(
                 alignment: Alignment.topLeft,
@@ -69,11 +69,11 @@ class HomeScreen extends StatelessWidget {
                   underLine: TextDecoration.none,
                 ),
               ),
-            ),*/
-            const SizedBox(
-              height: 0,
             ),
-           CardItems(),
+            const SizedBox(
+              height: 20,
+            ),
+          /*  CardItems(),*/
           ],
         ),
       ),

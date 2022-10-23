@@ -29,9 +29,6 @@ class LoginScreen extends StatelessWidget {
           child: Column(
             children: [
              /* Image.asset('assets/images/LogIN.png'),*/
-             const SizedBox(
-                          height: 100,
-                        ),
               SizedBox(
                 width: double.infinity,
                 height: MediaQuery.of(context).size.height / 1.3,
@@ -186,7 +183,7 @@ class LoginScreen extends StatelessWidget {
                           children: [
                             InkWell(
                               onTap: () {
-                                controller.googleSinUpApp();
+                                controller.faceBookSignUpApp();
                               },
                               child: Image.asset(
                                 "assets/images/facebook.png",

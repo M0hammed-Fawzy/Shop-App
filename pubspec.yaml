@@ -53,8 +53,7 @@ dependencies:
   pay: ^1.0.6
   google_maps_flutter: ^2.1.2
   location: ^4.3.0
-
-  dot_navigation_bar: ^1.0.1+4
+  convex_bottom_bar: ^3.0.0
 
 
 

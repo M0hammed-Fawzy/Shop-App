@@ -1,5 +1,5 @@
 import 'package:badges/badges.dart';
-import 'package:dot_navigation_bar/dot_navigation_bar.dart';
+import 'package:convex_bottom_bar/convex_bottom_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:car/logic/controllers/cart_controller.dart';
@@ -46,21 +46,18 @@ class MainScreen extends StatelessWidget {
             title: Text(controller.title[controller.currentIndex.value]),
             centerTitle: true,
           ),
-
-          
-
+          /*
           bottomNavigationBar: Padding(
-            padding: const EdgeInsets.only(bottom: 0, top: 0),
+            padding: const EdgeInsets.only(bottom: 1, top: 1),
             child: DotNavigationBar(
-              margin: const EdgeInsets.only(bottom: 0, top: 0 , left: 10),
+              margin: const EdgeInsets.only(left: 10, right: 10),
               currentIndex: controller.currentIndex.value,
               dotIndicatorColor:
-                  Get.isDarkMode ? white : Color.fromARGB(0, 255, 236, 236),
+                  Get.isDarkMode ? white : Color.fromARGB(255, 255, 236, 236),
               unselectedItemColor: Colors.black,
               backgroundColor:
-                  Get.isDarkMode ? white : mainColor,
-                  
-               enableFloatingNavBar: false,
+                  Get.isDarkMode ? white : Color.fromARGB(255, 255, 236, 236),
+              // enableFloatingNavBar: false,
               onTap: (index) {
                 controller.currentIndex.value = index;
               },
@@ -69,39 +66,31 @@ class MainScreen extends StatelessWidget {
                 /// Home
                 DotNavigationBarItem(
                   icon: const Icon(Icons.home),
-                  selectedColor: Get.isDarkMode ? mainColor : white,
+                  selectedColor: Colors.red,
                 ),
 
                 /// category
                 DotNavigationBarItem(
                   icon: const Icon(Icons.category),
-                  selectedColor: Get.isDarkMode ? mainColor : white,
-                ),
-
-                ///search
-                DotNavigationBarItem(
-                  icon: const Icon(Icons.search),
-                  selectedColor: Get.isDarkMode ? mainColor : white,
+                  selectedColor: Colors.red,
                 ),
 
                 /// Likes
 
                 DotNavigationBarItem(
                   icon: const Icon(Icons.favorite),
-                  selectedColor: Get.isDarkMode ? mainColor : white,
+                  selectedColor: Colors.red,
                 ),
 
                 /// Profile
                 DotNavigationBarItem(
                   icon: const Icon(Icons.person),
-                  selectedColor: Get.isDarkMode ? mainColor : white,
+                  selectedColor: Colors.red,
                 ),
-                
               ],
             ),
-            
-          ),
-      /*    bottomNavigationBar: ConvexAppBar(
+          ),*/
+          bottomNavigationBar: ConvexAppBar(
             backgroundColor: Get.isDarkMode ? darkGreyClr : mainColor,
 
             items: [
@@ -114,7 +103,7 @@ class MainScreen extends StatelessWidget {
             onTap: (index) {
               controller.currentIndex.value = index;
             },
-          ),*/
+          ),
           body: IndexedStack(
             index: controller.currentIndex.value,
             children: controller.tabs,

@@ -10,10 +10,10 @@ class CategoryController extends GetxController {
   var isAllCategory = false.obs;
 
   List<String> imageCategory = [
-    "https://i.pinimg.com/564x/03/42/70/03427052fcba1deca91f4ba2c86c2c5c.jpg",
-    "https://i.pinimg.com/564x/23/ed/84/23ed842e31148fc03827b668dcf49f7b.jpg",
-    "https://i.pinimg.com/564x/e3/ea/60/e3ea60054e6bcad27c6e2f4decc9e07f.jpg",
-    "https://i.pinimg.com/564x/86/62/17/866217811f20a7a0b7f814244b5bab33.jpg",
+    "https://i.pinimg.com/564x/23/5f/21/235f2112e6ca2895d426e7d19eb297fc.jpg",
+    "https://i.pinimg.com/originals/f4/7b/d1/f47bd1f6a74ba192a475106a96e5961d.jpg",
+    "https://i.pinimg.com/564x/35/b5/11/35b5112ce3a83d7d6155c30807d31000.jpg",
+    "https://i.pinimg.com/564x/3d/b7/a6/3db7a6c3e28382c078b48d2a756893e7.jpg",
   ].obs;
 
   @override

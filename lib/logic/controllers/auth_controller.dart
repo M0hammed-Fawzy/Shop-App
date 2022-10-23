@@ -16,7 +16,7 @@ class AuthController extends GetxController {
   var displayUserEmail = ''.obs;
   FirebaseAuth auth = FirebaseAuth.instance;
   var googleSignIn = GoogleSignIn();
-  /*FaceBookModel? faceBookModel;*/
+  FaceBookModel? faceBookModel;
 
   var isSignedIn = false;
   final GetStorage authBox = GetStorage();
@@ -48,7 +48,7 @@ class AuthController extends GetxController {
       print('debug 2: ${userProfiloe?.photoURL}');
       print('debug 2: ${userProfiloe?.email}');
       displayUserName.value =
-          (userProfiloe != null ? userProfiloe?.displayName : "")?? "";
+          (userProfiloe != null ? userProfiloe!.displayName : "")!;
       displayUserName.value =
           (userProfiloe != null ? userProfiloe!.displayName : "") ?? "";
       displayUserPhoto.value =
@@ -193,7 +193,7 @@ class AuthController extends GetxController {
       );
     }
   }
-/*
+
   void faceBookSignUpApp() async {
     final LoginResult loginResult = await FacebookAuth.instance.login();
     // final accesToken = loginResult.accessToken!.token;
@@ -212,7 +212,7 @@ class AuthController extends GetxController {
       Get.offNamed(Routes.mainScreen);
     }
   }
-*/
+
   void resetPassword(String email) async {
     try {
       await auth.sendPasswordResetEmail(email: email);

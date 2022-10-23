@@ -91,7 +91,7 @@ class CardItems extends StatelessWidget {
             color: Colors.white,
             boxShadow: [
               BoxShadow(
-                color: Colors.grey.withOpacity(0.4),
+                color: Colors.grey.withOpacity(0.2),
                 spreadRadius: 3.0,
                 blurRadius: 5.0,
               ),
@@ -175,7 +175,7 @@ class CardItems extends StatelessWidget {
                             const Icon(
                               Icons.star,
                               size: 13,
-                              color: Colors.yellow,
+                              color: Colors.white,
                             ),
                           ],
                         ),

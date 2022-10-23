@@ -32,7 +32,7 @@ class CategoryScreen extends StatelessWidget {
             const SizedBox(
               height: 0,
             ),
-           CategoryWidget(),
+         /*   CategoryWidget(),*/
           ],
         ),
       ),
